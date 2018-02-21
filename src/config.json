@@ -5,7 +5,7 @@
     "coins" : [
       {
         "name" : "Bitcoin",
-        "symbol" : "BTC",
+        "symbol" : "btc",
         "api_uri" : "https://api.coinbase.com/v2/prices/BTC-USD/spot",
         "uri" : "https://www.coinbase.com/charts",
         "api_query_param" : "data.amount",
@@ -13,7 +13,7 @@
       },
       {
         "name" : "Bitcoin Cash",
-        "symbol" : "BCH",
+        "symbol" : "bch",
         "api_uri" : "https://api.coinbase.com/v2/prices/BCH-USD/spot",
         "uri" : "https://www.coinbase.com/charts",
         "api_query_param" : "data.amount",
@@ -21,7 +21,7 @@
       },
       {
         "name" : "Ethereum",
-        "symbol" : "ETH",
+        "symbol" : "eth",
         "api_uri" : "https://api.coinbase.com/v2/prices/ETH-USD/spot",
         "uri" : "https://www.coinbase.com/charts",
         "api_query_param" : "data.amount",
@@ -29,7 +29,7 @@
       },
       {
         "name" : "Litecoin",
-        "symbol" : "LTC",
+        "symbol" : "ltc",
         "api_uri" : "https://api.coinbase.com/v2/prices/LTC-USD/spot",
         "uri" : "https://www.coinbase.com/charts",
         "api_query_param" : "data.amount",
@@ -43,7 +43,7 @@
     "coins" : [
       {
         "name" : "Bitcoin",
-        "symbol" : "BTC",
+        "symbol" : "btc",
         "api_uri" : "https%3A%2F%2Fmin-api.cryptocompare.com%2Fdata%2Fprice%3Ffsym%3DBTC%26tsyms%3DUSD",
         "uri" : "https://www.cryptocompare.com/coins/btc/overview/USD",
         "api_query_param" : "USD",
@@ -51,7 +51,7 @@
       },
       {
         "name" : "Ripple",
-        "symbol" : "XRP",
+        "symbol" : "xrp",
         "api_uri" : "https%3A%2F%2Fmin-api.cryptocompare.com%2Fdata%2Fprice%3Ffsym%3DXRP%26tsyms%3DUSD",
         "uri" : "https://www.cryptocompare.com/coins/xrp/overview/USD",
         "api_query_param" : "USD",
@@ -59,7 +59,7 @@
       },
       {
         "name" : "Quantstamp",
-        "symbol" : "QSP",
+        "symbol" : "qsp",
         "api_uri" : "https%3A%2F%2Fmin-api.cryptocompare.com%2Fdata%2Fprice%3Ffsym%3DQSP%26tsyms%3DUSD",
         "uri" : "https://www.cryptocompare.com/coins/qsp/overview/USD",
         "api_query_param" : "USD",

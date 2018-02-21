@@ -1,10 +1,10 @@
 # Github Crypto Watch - Live Prices
-{% set allowed_columns=3 %}
+{% set allowed_columns=4 %}
 {% for source in sources %}
 ## {{  source.name }}
     {% if source.coins|length < allowed_columns %}{% set columns=source.coins|length %}{% else %}{% set columns=allowed_columns %}{% endif %}
 {% for coins in source.coins|batch(columns, ' ') -%}{% set outer_loop = loop %}
-|{% for coin in coins %}{% if coin!=' ' %}{{ "[!["~coin.name~"](https://img.shields.io/badge/dynamic/json.svg?colorB=007ec6&style=flat-square&uri="~coin.api_uri~"&query="~coin.api_query_param~"&label="~coin.symbol~"&prefix=$&suffix=%20USD&logo="~coin.icon~")]("~coin.uri~")" }}{% endif %}|{% endfor %}
+|{% for coin in coins %}{% if coin!=' ' %}{{ "[!["~coin.name~"](https://img.shields.io/badge/dynamic/json.svg?colorB=007ec6&style=flat-square&uri="~coin.api_uri~"&query="~coin.api_query_param~"&label="~coin.symbol|upper~"&prefix=$&suffix=%20USD&logo="~icons[coin.symbol]['icon']~")]("~coin.uri~")" }}{% endif %}|{% endfor %}
 {% if outer_loop.last %}{% if source.coins|length<=allowed_columns %}|{% for n in range(columns) %}--|{% endfor %}{% endif %}{% else %}|{% for n in range(columns) %}--|{% endfor %}{% endif %}{% endfor %}
 
 {{ "["~source.name~" API]("~source.api_url~")" }}
